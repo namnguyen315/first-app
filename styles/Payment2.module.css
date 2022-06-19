@@ -1,0 +1,168 @@
+.container{
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+.paymentContainer{
+    display: flex;
+    width: 100%;
+}
+.leftContainer{
+    left: 0;
+    width: 50%;
+}
+.title{
+    font-size: calc(20px + (35 - 20) * ((100vw - 375px)/ (1920 - 375)));
+    line-height: 1.2;
+    padding-bottom: calc(5px + (20 - 5) * ((100vw - 375px)/ (1920 - 375)));
+    border-bottom: solid 1px #ddd;
+    color: #383838;
+}
+.formInf {
+    display: block;
+}
+.inputInf{
+    border: solid 1px #d4d4d4;
+    height: 50px;
+    display: block;
+    position: relative;
+    width: 70%;
+    padding: 0 calc(13px + (31 - 13) * ((100vw - 375px)/ (1920 - 375)));
+    color: #707070;
+    line-height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));
+    font-size: calc(14px + (16 - 14) * ((100vw - 375px)/ (1920 - 375)));
+    margin-bottom: 20px;
+}
+.inputInf:focus{
+    outline: none;
+    border: solid 2px aqua;
+}
+.titleInf{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.paymentRadio{
+    margin-bottom: calc(10px + (20 - 10) * ((100vw - 375px)/ (1920 - 375)));
+    display: flex;
+    -webkit-appearance: none;
+    padding: calc(15px + (15 - 15) * ((100vw - 375px)/ (1920 - 375))) calc(18px + (33 - 18) * ((100vw - 375px)/ (1920 - 375))) calc(14px + (15 - 14) * ((100vw - 375px)/ (1920 - 375)));
+    border: solid 1px #ddd;
+    align-items: flex-start;
+    width: 70%;
+}
+.paymentRadio input{
+    position: relative;
+    margin: 1px calc(10px + (15 - 10) * ((100vw - 375px)/ (1920 - 375))) 0 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(13px + (19 - 13) * ((100vw - 375px)/ (1920 - 375)));
+    height: calc(13px + (19 - 13) * ((100vw - 375px)/ (1920 - 375)));
+    border-radius: 50%;
+    color: #949494;
+    border: 10px;
+    font-size: 14px;
+}
+.paymentRadio label{
+    cursor: pointer;
+    color: #949494;
+}
+.paymentRadio input:checked~label {
+    color: #383838;
+    font-weight: 600;
+}
+.rightContainer{
+    right: 0;
+    background-color: #e7e7e7;
+    width: 50%;
+    margin: 50px 0;
+}
+.poductContainer{
+    display: flex;
+    margin: 50px ; 
+}
+.imgContainer{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    background-color: #f8f8f8;
+    border: solid 1px #ddd;
+    left: 0;
+}
+.infProduct{
+    margin-left: 100px;
+    width: 300px;
+    font-size: 20px;
+}
+.boxDiscount input{
+    height: 60px;
+    width: 500px;
+    margin-right: 90px;
+    border: 2px dashed #b1154a;
+
+}
+.discountContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonDiscount{
+    background-color: aquamarine;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    padding-top: 20px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.buttonDiscount:hover{
+    background-color: aqua;
+}
+.boxDiscount input:focus{
+    outline: none;
+}
+.inputDiscount{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.paymentBoxTotal{
+    display: flex;
+    width: 80%;
+    height: 80px;
+    margin: 50px;
+    border-bottom: solid 1px rgb(94, 94, 94);
+}
+.paymentText{
+    width: 50%;
+    font-weight: 400;
+    font-size: 15px;
+    color: #707070;
+}
+.price{
+    width: 50%;
+    font-size: 15px;
+    text-align: end;
+}
+.paymentFooter{
+    display: flex;
+    width: 80%;
+    height: 80px;
+    margin: 50px;
+}
+.paymentTotal{
+    width: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #707070;
+}
+.TotalPrice{
+    width: 50%;
+    font-size: 25px;
+    text-align: end;
+}

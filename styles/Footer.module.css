@@ -1,0 +1,85 @@
+.container{
+    background-color: aqua;
+    height: 37vh;
+    width: 100%;
+    display: flex;
+}
+/* --------------------container1 ----------------*/
+.container1{
+    width: 30vw;
+    margin-left: 15vw;
+}
+.title{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.textNote{
+    font-weight: lighter;
+    color: rgb(8, 8, 8);
+width: 300px;
+}
+.email{
+    margin-top: 20px;
+}
+.phone{
+    margin-top: 20px;
+}
+.iconContact{
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.icon{
+    width: 15%;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline;
+}
+.icon:hover{
+    color: red;
+    transition:all 0.5s;
+    transform: scale(1.5);
+}
+/* --------------------container2 ----------------*/
+.container2{
+    width: 20vw;
+}
+.nameCompany{
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.icon2{
+    margin-right: 10px;
+}
+.icon2:hover{
+    color: red;
+    transition:all 0.5s;
+    transform: scale(1.5);
+}
+.buttonContact{
+    display:flex;
+    margin-bottom: 20px;
+}
+.buttonContact a:hover{
+    color: red;
+}
+/* ----------ss---------container3 ----------------*/
+.container3{
+    margin-left: 70px;
+    width: 15vw;
+}
+.textSupport{
+    font-size: medium;
+}
+.container li{
+    padding-bottom: 20px;
+}
+.container li:hover{
+    color: red;
+}
+/* --------------------container4 ----------------*/
+.container4{
+    width: 20vw;
+    margin-right: 10vw;
+}
