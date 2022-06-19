@@ -20,3 +20,37 @@
     height: 100%;
     position:relative;
 }
+@media screen and (max-width : 480px){
+    .container{
+        display: flex;
+        height: calc(40vh);
+        overflow: hidden;
+    }
+    .arrowContainer{
+        display: flex;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        justify-content: center;
+    }
+    .arrowButtonRight{
+        width: 50vw;
+        height: 50px;
+        margin-left: 45vw;
+    }
+    .arrowButtonLeft{
+        width: 50vw;
+        height: 50px;
+        margin-right: 45vw;
+    }
+    .wrapper{
+        width: 300vw;
+        height: 100%;
+        display: flex;
+        transition:all 1.5s ease-in-out;
+    }
+    .imgContainer{
+        width: 100vw;
+        height: 100%;
+        position:relative;
+    }
+}

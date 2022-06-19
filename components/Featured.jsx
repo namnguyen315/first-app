@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import   React,{ useState } from 'react'
 import styles from '../styles/Featured.module.css'
 import {IoIosArrowBack,IoIosArrowForward} from 'react-icons/io'
 import Image from 'next/image'
@@ -28,8 +28,8 @@ const Featured = () => {
         ))}
         </div>
         <div className={styles.arrowContainer}>
-            <IoIosArrowBack style={{float:"left", cursor:"pointer"}} size="150px" onClick={()=>handleArrow("l")}/>
-            <IoIosArrowForward style={{float:"right",cursor:"pointer"}} size="150px" onClick={()=>handleArrow("r")}/>
+            <IoIosArrowBack className={styles.arrowButtonLeft} size="150px" onClick={()=>handleArrow("l")}/>
+            <IoIosArrowForward className={styles.arrowButtonRight} size="150px" onClick={()=>handleArrow("r")}/>
         </div>
     </div>
   )

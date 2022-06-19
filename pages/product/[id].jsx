@@ -3,13 +3,15 @@ import styles from '../../styles/Product.module.css'
 import Image from 'next/image'
 import axios from 'axios'
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import {AiOutlinePlus,AiOutlineMinus,AiOutlineHeart,AiFillHeart} from 'react-icons/ai'
 import { BsTelephoneInbound,BsCartCheck } from'react-icons/bs'
 import { MdOutlineFavoriteBorder }from 'react-icons/md'
-import { addProduct } from '../../redux/cartSlice';
+import { useDispatch } from 'react-redux';
+import { addProduct } from '../../redux/cartSlide';
+import { useSelector } from 'react-redux';
 
 const Product = ({watch}) => {
+    const heart = useSelector((state) => state.cart.heart);
     const [type, setType] = useState(0)
     const [number, setNumber] = useState( 0 )
     const [style,setStyle] = useState(styles.icon)
@@ -73,7 +75,7 @@ const Product = ({watch}) => {
             <div className={styles.contact}>
                 <div className={styles.iconButton}>
                     <AiFillHeart className={style} size="35px" onClick={()=>handleArrow("h")& changeStyle(count)&changeNumberLike(style)}/>
-                    <div className={styles.counterLike}>{countLike}</div>
+                    <div className={styles.counterLike}>{heart}</div>
                     Yêu thích
                 </div>
                 <div className={styles.iconButton}>

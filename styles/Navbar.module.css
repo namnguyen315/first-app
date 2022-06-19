@@ -1,6 +1,5 @@
 .container{
     height: 100px;
-    background-color:aqua;
     position: sticky;
     z-index: 999;
     top: 0;
@@ -13,6 +12,10 @@
 .containerUnder{
     display:flex;
     height: 60px;
+    background-color:aqua;
+}
+.buttonMenu{
+    display: none;
 }
 .textButtonPhone{
     color: rgb(0, 0, 0);
@@ -22,7 +25,7 @@
 .textButtonPhone:hover {
     color: #2ad8d8; 
 }
-.logoNavbar{
+.logoNavbarContainer{
     margin-left: 400px;
     margin-right: 400px;
 }
@@ -31,12 +34,10 @@
     color: black;
     margin-top: 10px;
     margin-left: 300px;
-    cursor: pointer;
 }
 .search{
     margin-top: 10px;
     color: black;
-    cursor: pointer;
 }
 .shoppingCart{
     margin-left: 20Px;
@@ -58,16 +59,15 @@
     font-weight:500;
     font-size: 13px;
     color: white;
+    cursor: pointer;
 }
 .person{
     margin-left: 20px;
     margin-top: 6px;
-    cursor: pointer;
 }
 .heart{
     margin-left: 20px;
     margin-top: 6px;
-    cursor: pointer;
 }
 /* -----------------------text container under--------------------- */
 .buttonTextLeft{
@@ -88,4 +88,98 @@
 }
 .buttonUnderNavbar{
     margin-top: 0px;
+}
+@media screen and (max-width :480px) {
+    .container{
+        display: block;
+        z-index: 999;
+        top: 0;
+        position: sticky;
+        width: 100%;
+        height: 80px;
+    }
+    .containerFront{
+        background-color:white;
+        height: 40px;
+        display: flex;
+        width: 100%;
+    }
+    .phone{
+        color: black;
+        margin-left: 0px;
+        width: 5%;
+    }
+    .textButtonPhone{
+        color: rgb(0, 0, 0);
+        margin-top: 8px;
+        margin-left: 0px;
+        font-size: xx-small;
+        text-align: center;
+        width: 15%;
+    }
+    .logoNavbarContainer{
+        width: 60%;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        align-items: center;
+    }
+    .search{
+        color: black;
+        margin-right: 10px;
+        width: 4%;
+    }
+    .shoppingCart{
+        cursor: pointer;
+        width: 3%;
+        margin-left: 0px;
+        color: black;
+    }
+    .counterCart{
+        position:relative;
+        width: 3%;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+        right: 5px;
+        top: 8px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-weight:500;
+        font-size: 8px;
+        color: white;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .person{
+        cursor: pointer;
+        width: 3%;
+        margin-left: 0px;
+        color: black;
+    }
+    .heart{
+        cursor: pointer;
+        width: 3%;
+        margin-left: 0px;
+        margin-right: 10px;
+        color: black;
+    }
+    .containerUnder{
+        display:flex;
+        height: 40px;
+        width: 100%;
+    }
+    .buttonTextLeft{
+        display: none;
+    }
+    .buttonTextRight{
+        display: none;
+    }
+    .buttonMenu{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 }

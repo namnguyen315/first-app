@@ -4,8 +4,11 @@
     flex-direction: column;
     align-items: center;
 }
+.title{
+    font-size: 5vw;
+}
 .desc{
-    font-size: 24px;
+    font-size: 3vw;
     color: #444;
     width: 70%;
 }
