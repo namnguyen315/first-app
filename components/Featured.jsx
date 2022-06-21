@@ -4,7 +4,7 @@ import {IoIosArrowBack,IoIosArrowForward} from 'react-icons/io'
 import Image from 'next/image'
 
 const Featured = () => {
-         const [index, setIndex] = useState( 0 )
+    const [index, setIndex] = useState( 0 )
     const images = [
         "/img/feature1.jpg",
         "/img/feature2.jpg",

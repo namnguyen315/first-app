@@ -48,7 +48,6 @@ const Product = ({watch}) => {
         if(direction%2==0){
             setStyle(style = styles.icon1)
         }
-
     }
     return (
     <div className={styles.container}>

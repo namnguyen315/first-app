@@ -8,6 +8,8 @@
     background-color:white;
     height: 40px;
     display: flex;
+    width: 100vw;
+    column-count: 3;
 }
 .containerUnder{
     display:flex;
@@ -15,6 +17,9 @@
     background-color:aqua;
 }
 .buttonMenu{
+    display: none;
+}
+.menuBar{
     display: none;
 }
 .textButtonPhone{
@@ -26,14 +31,25 @@
     color: #2ad8d8; 
 }
 .logoNavbarContainer{
-    margin-left: 400px;
-    margin-right: 400px;
+    width: 100px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    align-items: center;
 }
 /* -------------------------iconNavbar------------------------------ */
 .phone{
     color: black;
     margin-top: 10px;
     margin-left: 300px;
+}
+.frontLeft{
+    width:calc(50vw - 50px);
+}
+.frontRight{
+    width: calc(50vw - 50px);
+    display: flex;
+    justify-content: center;
 }
 .search{
     margin-top: 10px;
@@ -64,12 +80,16 @@
 .person{
     margin-left: 20px;
     margin-top: 6px;
+    margin-right: 25px;
 }
 .heart{
     margin-left: 20px;
     margin-top: 6px;
 }
 /* -----------------------text container under--------------------- */
+.buttonMenuClose{
+    display: none;
+}
 .buttonTextLeft{
     margin-top: 20px;
     margin-left: 260px;
@@ -102,42 +122,54 @@
         background-color:white;
         height: 40px;
         display: flex;
-        width: 100%;
-    }
-    .phone{
-        color: black;
-        margin-left: 0px;
-        width: 5%;
-    }
-    .textButtonPhone{
-        color: rgb(0, 0, 0);
-        margin-top: 8px;
-        margin-left: 0px;
-        font-size: xx-small;
-        text-align: center;
-        width: 15%;
+        width: 100vw;
+        column-count: 3;
     }
     .logoNavbarContainer{
-        width: 60%;
+        width: 100px;
         text-align: center;
         margin-left: 0px;
         margin-right: 0px;
         align-items: center;
     }
+    .frontLeft{
+        width:calc(50vw - 50px);
+    }
+    .phone{
+        color: black;
+        margin-left: 0px;
+        width:40px;
+    }
+    .textButtonPhone{
+        color: rgb(0, 0, 0);
+        position:absolute;
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: small;
+        text-align: center;
+        width: 50px;
+        height: 40px;
+    }
+    .frontRight{
+        width: calc(50vw - 50px);
+        display: flex;
+    }
     .search{
         color: black;
-        margin-right: 10px;
-        width: 4%;
+        margin-right: 0px;
+        width: 20px;
+        margin-left: calc(50vw - 160px);
+        margin-top: 6px;
     }
     .shoppingCart{
         cursor: pointer;
-        width: 3%;
-        margin-left: 0px;
+        width: 20px;
+        margin-left: 4px;
         color: black;
     }
     .counterCart{
         position:relative;
-        width: 3%;
+        width: 10px;
         height: 10px;
         background-color: red;
         border-radius: 50%;
@@ -151,19 +183,20 @@
         font-size: 8px;
         color: white;
         cursor: pointer;
-        margin-right: 10px;
+        margin-left: -4px;
     }
     .person{
         cursor: pointer;
-        width: 3%;
-        margin-left: 0px;
+        width: 20px;
+        margin-left: 4px;
         color: black;
+        margin-right: 0px;
     }
     .heart{
         cursor: pointer;
-        width: 3%;
-        margin-left: 0px;
-        margin-right: 10px;
+        width: 20px;
+        margin-left: 4px;
+        margin-right: 0px;
         color: black;
     }
     .containerUnder{
@@ -179,7 +212,65 @@
     }
     .buttonMenu{
         display: flex;
-        margin-top: 10px;
-        margin-left: 10px;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .buttonMenuClose{
+        display: none;
+        position: absolute;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .containerUnder .hiden{
+        background-color: none;
+        width: 40px;
+        height: 40px;
+        transition: width 0.5s , height 0.5s;
+        transition-delay: 0s, 0.75s;
+    }
+    .containerUnder .hiden .buttonMenu{
+        display: flex;
+    }
+    .containerUnder .active {
+        display: flex;
+        background-color: white;
+        width: 100px;
+        height: 170px;
+        transition: height 0.5s , width 0.5s;
+        transition-delay: 0s, 0.75s;
+        border-bottom:solid 2px #ddd ;
+        border-right: solid 2px #ddd;
+    }
+    .containerUnder .active .buttonMenuClose{
+        display: flex;
+    }
+    .containerUnder .active .buttonMenu{
+        display: none;
+    }
+    .containerUnder .hiden .menuBar{
+        display: block;
+        transform: translateX(-100px);
+        list-style: none;
+        margin-top: 40px;
+    }
+    .containerUnder .active .menuBar{
+        display: block;
+        transition-delay: 1s;
+        list-style: none;
+        margin-top: 45px;
+    }
+    .containerUnder .active .menuBar .text1{
+        margin-left: 5px;
+    }
+    .containerUnder .active .menuBar li{
+        border-bottom: solid 2px #ddd;
+        margin-bottom: 10px;
+        margin-left: 11px;
+        width: 100%;
+    }
+    .containerUnder .active .menuBar li:nth-child(4){
+        border-bottom: none;
     }
 }

@@ -27,13 +27,14 @@ width: 300px;
 }
 .iconContact{
     margin-top: 20px;
-    margin-left: -20px;
+    margin-left: 0px;
 }
 .icon{
     width: 15%;
     margin-top: 10px;
     cursor: pointer;
     display: inline;
+    margin-left: -20px;
 }
 .icon:hover{
     color: red;
@@ -92,16 +93,24 @@ width: 300px;
     }
     .container1{
         width: 25vw;
-        margin-left: 1vw;
+        margin:0 5px;
     }
     .title{
         font-size: 15px;
-    }   
+        justify-content: center;
+        text-align: center;
+        height: 50px;
+        border-bottom: solid 2px #ddd;
+    }
+    .iconContact .title{
+        border-bottom: none;
+    }  
     .textNote{
         font-weight: lighter;
         color: rgb(8, 8, 8);
         width: 25vw;
         font-size: 13px;
+        padding: 0 5px;
     }
     .email input{
         display: block;
@@ -130,8 +139,10 @@ width: 300px;
         font-weight: 500;
     }
     .iconContact{
-        width: 22%;
+        width: 100%;
         margin: 0;
+        justify-content: center;
+        text-align: center;
     }
     .icon{
         width: 100%;
@@ -140,20 +151,41 @@ width: 300px;
     /* -----------------------------container2------------------ */
     .container2{
         width: 25vw;
+        margin:0 5px;
     }
     .nameCompany{
         font-size: 13px;
         font-weight: 600;
         margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
     }
     .icon2{
         margin-right: 0px;
     }
     .buttonContact{
         display:block;
+        justify-content: center;
+        text-align: center;
         margin-bottom: 20px;
     }
-    .buttonContact a:hover{
-        color: red;
+    .buttonContact a{
+        display: none;
+    }
+    /* -----------------------------container3------------------ */
+    .container3{
+        width: 25vw;
+        margin:0 5px;
+    }
+    .textSupport{
+        font-size: 13px;
+    }
+    /* -----------------------------container4------------------ */
+    .container4{
+        width: 25vw;
+        margin:0 5px;
+    }
+    .container4 li{
+        font-size: 13px;
     }
 }

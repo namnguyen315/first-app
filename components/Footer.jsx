@@ -23,8 +23,8 @@ const Footer = () => {
             <button type="submit">Submit</button>
           </div>
         </form>
-        <h1 className={styles.title}>KẾT NỐI MẠNG XÃ HỘI</h1>
         <div className={styles.iconContact}>
+          <h1 className={styles.title}>KẾT NỐI MẠNG XÃ HỘI</h1>
           <BsFacebook className={styles.icon} size="40px"/>
           <BsPinterest className={styles.icon} size="40px"/>
           <AiFillYoutube className={styles.icon} size="40px"/>
@@ -61,7 +61,7 @@ const Footer = () => {
       </div>
       <div className={styles.container4}>
         <h1 className={styles.title}>THÔNG TIN THÊM</h1>
-         <li style={{listStyle:"none"}}> <a href='#'>Nhận Order Đồng Hồ</a></li>
+         <li style={{listStyle:"none"}}><a href='#'>Nhận Order Đồng Hồ</a></li>
          <li style={{listStyle:"none"}}><a href='#'>Tin Tức Đồng Hồ</a></li>
          <li style={{listStyle:"none"}}><a href='#'>Câu Hỏi Thường Gặp</a></li>
          <li style={{listStyle:"none"}}><a href='#'>Liên Hệ Phản Ánh</a></li>

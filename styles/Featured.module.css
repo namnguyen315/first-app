@@ -9,6 +9,14 @@
     position: absolute;
     width: 99vw;
 }
+.arrowButtonLeft{
+    float: left;
+    left: 0;
+}
+.arrowButtonRight{
+    float: right;
+    right: 0;
+}
 .wrapper{
     width: 300vw;
     height: 100%;
