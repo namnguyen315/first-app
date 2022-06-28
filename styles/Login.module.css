@@ -1,0 +1,11 @@
+.container{
+    background-color:none;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.containerLogin{
+    background-color: aqua;
+    width: 20vw;
+    height: 50vh;
+}
