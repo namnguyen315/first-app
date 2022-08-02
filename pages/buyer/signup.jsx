@@ -1,5 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
 import styles from "../../styles/Signup.module.css"
 import {FaFacebook,FaGoogle,FaApple} from "react-icons/fa"
 import Image from 'next/image'
@@ -58,12 +57,6 @@ const signup = () => {
         </div>
       </div>
     </div>
-=======
-
-const signup = () => {
-  return (
-    <div>signup</div>
->>>>>>> 7003008e7012f6eaea45229c20f872cab4c0c3bf
   )
 }
 
