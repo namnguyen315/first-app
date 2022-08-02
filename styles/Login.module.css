@@ -1,4 +1,5 @@
 .container{
+<<<<<<< HEAD
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -152,4 +153,15 @@
     font-weight: 700;
     margin-left: 5px;
     cursor: pointer;
+=======
+    background-color:none;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.containerLogin{
+    background-color: aqua;
+    width: 20vw;
+    height: 50vh;
+>>>>>>> 7003008e7012f6eaea45229c20f872cab4c0c3bf
 }
