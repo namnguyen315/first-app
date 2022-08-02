@@ -13,12 +13,12 @@ const Footer = () => {
         <div className={styles.textNote}>Bạn chưa chọn được mẫu đồng hồ ưng ý hoặc muốn tư vấn,hãy để lại số điện thoại hoặc email của bạn tại đây.</div>
         <form action="/send-data-here" method="post">
           <div className={styles.email}>
-            <label for="first">email:</label>
+            <label>email:</label>
             <input type="text" id="first" name="first" />
             <button type="submit">Submit</button>
           </div>
           <div className={styles.phone}>
-            <label for="last">phone:</label>
+            <label>phone:</label>
             <input type="text" id="last" name="last" />
             <button type="submit">Submit</button>
           </div>

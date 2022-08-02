@@ -2,6 +2,8 @@ import React from 'react'
 import styles from '../../styles/Payment2.module.css'
 import Image from 'next/image';
 import { useState } from 'react';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 const payment2 = () => {
     const watch = {
@@ -14,6 +16,7 @@ const payment2 = () => {
       };
   return (
     <div className={styles.container}>
+        <Navbar/>
         <div className={styles.title}>
           Thanh toán
         </div>
@@ -93,6 +96,7 @@ const payment2 = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
   )
 }

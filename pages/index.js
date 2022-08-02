@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Featured from '../components/Featured'
 import WatchList from '../components/WatchList'
 import styles from '../styles/Home.module.css'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function Home({watchList}) {
   return (
@@ -13,8 +15,10 @@ export default function Home({watchList}) {
         <meta name="description" content="best shop in Ha Noi" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <Featured/>
-      <WatchList watchList={watchList}/>
+      <Navbar/>
+        <Featured/>
+        <WatchList watchList={watchList}/>
+      <Footer/>
     </div>
   )
 }

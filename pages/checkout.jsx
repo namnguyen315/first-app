@@ -4,6 +4,8 @@ import styles from '../styles/CheckOut.module.css'
 import Image from 'next/image';
 import {AiOutlinePlus,AiOutlineMinus,AiOutlineHeart,AiFillHeart} from 'react-icons/ai'
 import { useState } from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const cart = () => {
   const [number, setNumber] = useState ( 1 )
@@ -26,6 +28,7 @@ const cart = () => {
   }
   return (
     <div className={styles.container}>
+      <Navbar/>
         <div className={styles.title}>
           Giỏ hàng
         </div>
@@ -95,6 +98,7 @@ const cart = () => {
             THANH TOÁN
           </div>
         </div>  
+        <Footer/>
     </div>
     )
 }

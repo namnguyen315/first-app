@@ -31,12 +31,14 @@ const changeStyle = (direction)=>{
     <div className={styles.container}>
       <div className={styles.containerFront}>
         <div className={styles.frontLeft}>
-          <AiFillPhone className={styles.phone} size = "20px"/>
+          <AiFillPhone className={styles.phone} size = "22px"/>
           <a className={styles.textButtonPhone} href="tel:+84977xxxx">hotline: 0977.xxx.xxx</a>
         </div>
-        <div className={styles.logoNavbarContainer}>
-          <Image src="/logo.png" alt="" width="100px" height="100px"/>
-        </div>
+        <Link href="/">
+          <div className={styles.logoNavbarContainer}>
+            <Image src="/logo.png" alt="" width="100px" height="100px"/>
+          </div>
+        </Link>
         <div className={styles.frontRight}>
           <AiOutlineSearch className={styles.search} size="22px"/>
           <Link href="/checkout">
@@ -44,7 +46,9 @@ const changeStyle = (direction)=>{
           </Link>
           <div className={styles.counterCart}>{quantity}</div>
           <AiOutlineHeart className={styles.heart} size = "22px"/>
-          <BsPerson className={styles.person} size="22px"/>
+          <Link href="/buyer/login">
+            <BsPerson className={styles.person} size="22px"/>
+          </Link>
         </div>
       </div>
       <div className={styles.containerUnder}>
@@ -74,6 +78,8 @@ const changeStyle = (direction)=>{
           <a className={styles.text1} href="#">THƯƠNG HIỆU</a>
           <a className={styles.text1} href="#">NAM</a>
           <a className={styles.text1} href="#">NỮ</a>
+        </div>
+        <div className={styles.space}>
         </div>
         <div className={styles.buttonTextRight}>
           <a className={styles.text1} href="#">ĐÔI</a>

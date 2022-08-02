@@ -28,8 +28,12 @@ const Featured = () => {
         ))}
         </div>
         <div className={styles.arrowContainer}>
-            <IoIosArrowBack className={styles.arrowButtonLeft} size="150px" onClick={()=>handleArrow("l")}/>
-            <IoIosArrowForward className={styles.arrowButtonRight} size="150px" onClick={()=>handleArrow("r")}/>
+            <div className={styles.arrowBackground}>
+                <IoIosArrowBack className={styles.arrowButtonLeft} size="100px" onClick={()=>handleArrow("l")}/>
+            </div>
+            <div className={styles.arrowBackground}>
+                <IoIosArrowForward className={styles.arrowButtonRight} size="100px" onClick={()=>handleArrow("r")}/>
+            </div>
         </div>
     </div>
   )
